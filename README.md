@@ -312,6 +312,7 @@ cd KToon
 
 ## Implementations in Other Languages
 
+- **Kotlin:** [JToon](https://github.com/TechnicalAmanjeet/KToon)
 - **Java:** [JToon](https://github.com/felipestanzani/JToon)
 - **TypeScript/JavaScript:** [@johannschopplich/toon](https://github.com/johannschopplich/toon) (original)
 - **Elixir:** [toon_ex](https://github.com/kentaro/toon_ex)
@@ -322,7 +323,6 @@ cd KToon
 - **Swift:** [TOONEncoder](https://github.com/mattt/TOONEncoder)
 - **Go:** [gotoon](https://github.com/alpkeskin/gotoon)
 - **Rust:** [toon-rs](https://github.com/JadJabbour/toon-rs)
-- **Kotlin:** [JToon](https://github.com/TechnicalAmanjeet/KToon)
 
 ## License
 
