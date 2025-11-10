@@ -21,7 +21,6 @@ bin/
 
 # Kotlin
 *.class
-*.war
 *.ear
 
 # Log files
