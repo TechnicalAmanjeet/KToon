@@ -1,0 +1,37 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# macOS
+.DS_Store
+
+# Kotlin
+*.class
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# Package files
+*.tar.gz
+*.zip
+
+# Virtual machine crash logs
+hs_err_pid*
+
