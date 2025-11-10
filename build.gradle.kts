@@ -41,3 +41,48 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
         jvmTarget = "17"
     }
 }
+
+// Configure Java sources jar
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
+// Publishing configuration for JitPack
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.TechnicalAmanjeet"
+            artifactId = "ktoon"
+            version = project.version.toString()
+            
+            from(components["java"])
+            
+            pom {
+                name.set("KToon")
+                description.set("Token-Oriented Object Notation (TOON) - A compact, human-readable format for LLM contexts (Kotlin implementation)")
+                url.set("https://github.com/TechnicalAmanjeet/KToon")
+                
+                licenses {
+                    license {
+                        name.set("MIT License")
+                        url.set("https://opensource.org/licenses/MIT")
+                    }
+                }
+                
+                developers {
+                    developer {
+                        id.set("technicalamanjeet")
+                        name.set("Amanjeet")
+                    }
+                }
+                
+                scm {
+                    connection.set("scm:git:git://github.com/TechnicalAmanjeet/KToon.git")
+                    developerConnection.set("scm:git:ssh://github.com/TechnicalAmanjeet/KToon.git")
+                    url.set("https://github.com/TechnicalAmanjeet/KToon")
+                }
+            }
+        }
+    }
+}
